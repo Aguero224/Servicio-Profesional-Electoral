@@ -36,7 +36,7 @@ const Sidebar = ({ setSeccion, menuAbierto, setMenuAbierto }) => {
         <ul className="space-y-6 font-bold text-[#500778] mt-6 text-base flex-grow">
           <li>
             <button onClick={() => setSPENIEEBCAbierto(!SPENIEEBCAbierto)} className="w-full text-left flex justify-between items-center hover:text-[#FF6A13]">
-              SPEN-IEEBC <span>{SPENIEEBCAbierto ? "▲" : "▼"}</span>
+             Estructura SPEN-IEEBC <span>{SPENIEEBCAbierto ? "▲" : "▼"}</span>
             </button>
             {SPENIEEBCAbierto && (
               <ul className="mt-3 ml-5 space-y-3 text-lg font-bold text-[#500778]">
