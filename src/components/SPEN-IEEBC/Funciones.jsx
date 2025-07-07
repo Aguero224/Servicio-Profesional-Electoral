@@ -6,8 +6,8 @@ import React from "react";
 const Funciones = () => {
   return (
     <div className="p-4">
-      <h2 className="text-2xl font-bold">Asignacion de Cargos</h2>
-      <p>Información sobre la Asignacion de cargos.</p>
+      <h2 className="text-2xl font-bold">Funciones</h2>
+      <p>Información sobre las Funciones.</p>
     </div>
   );
 };

@@ -40,8 +40,8 @@ const Sidebar = ({ setSeccion, menuAbierto, setMenuAbierto }) => {
             </button>
             {SPENIEEBCAbierto && (
               <ul className="mt-3 ml-5 space-y-3 text-lg font-bold text-[#500778]">
-                <li><button className="w-full text-left text-sm hover:text-[#FF6A13]" onClick={() => handleMenuClick("Funciones")}>Plazas y Adscripciones</button></li>
-                <li><button className="w-full text-left text-sm hover:text-[#FF6A13]" onClick={() => handleMenuClick("Plaza_sy_adscripciones")}>Funciones</button></li>
+                <li><button className="w-full text-left text-sm hover:text-[#FF6A13]" onClick={() => handleMenuClick("Plaza_sy_adscripciones")}>Plazas y Adscripciones</button></li>
+                <li><button className="w-full text-left text-sm hover:text-[#FF6A13]" onClick={() => handleMenuClick("Funciones")}>Funciones</button></li>
               </ul>
             )}
           </li>

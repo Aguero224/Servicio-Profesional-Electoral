@@ -6,8 +6,8 @@ import React from "react";
 const Plaza_sy_adscripciones = () => {
   return (
     <div className="p-4">
-      <h2 className="text-2xl font-bold">Asignacion de Cargos</h2>
-      <p>Información sobre la Asignacion de cargos.</p>
+      <h2 className="text-2xl font-bold">Plazas y Adscripciones</h2>
+      <p>Información sobre las Plazas y Adscripciones.</p>
     </div>
   );
 };
