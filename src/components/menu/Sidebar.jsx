@@ -6,6 +6,7 @@ const Sidebar = ({ setSeccion, menuAbierto, setMenuAbierto }) => {
   const [SPENIEEBCAbierto, setSPENIEEBCAbierto] = useState(false);
   const [comisionAbierto, setComisionAbierto] = useState(false);
   const [instrumentosAbierto, setinstrumentosAbierto] = useState(false);  
+  const [concursosAbierto, setConcursosAbierto] = useState(false);
 
   const handleMenuClick = (seccion) => {
     setSeccion(seccion);
@@ -71,6 +72,17 @@ const Sidebar = ({ setSeccion, menuAbierto, setMenuAbierto }) => {
                 <li><button className="w-full text-left text-sm hover:text-[#FF6A13]" onClick={() => handleMenuClick("Estatuto_del_Servicio_Profesional_Electoral")}>Estatuto del Servicio Profesional Electoral y del personal de la Rama Administrativa</button></li>
                 <li><button className="w-full text-left text-sm hover:text-[#FF6A13]" onClick={() => handleMenuClick("Lineamientos")}>Lineamientos</button></li>
                 <li><button className="w-full text-left text-sm hover:text-[#FF6A13]" onClick={() => handleMenuClick("Catálogo_de_cargos_y_puestos")}>Catálogo de cargos y puestos</button></li>
+              </ul>
+            )}
+          </li>
+
+          <li>
+            <button onClick={() => setConcursosAbierto(!concursosAbierto)} className="w-full text-left flex justify-between items-center hover:text-[#FF6A13]">
+              Concursos Públicos <span>{concursosAbierto ? "▲" : "▼"}</span>
+            </button>
+            {concursosAbierto && (
+              <ul className="mt-3 ml-5 space-y-3 text-lg font-bold text-[#500778]">
+                <li><button className="w-full text-left text-sm hover:text-[#FF6A13]" onClick={() => handleMenuClick("Com2022_2023")}>2022-2023</button></li>
               </ul>
             )}
           </li>
