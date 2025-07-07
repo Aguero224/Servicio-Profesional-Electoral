@@ -7,6 +7,7 @@ const Sidebar = ({ setSeccion, menuAbierto, setMenuAbierto }) => {
   const [comisionAbierto, setComisionAbierto] = useState(false);
   const [instrumentosAbierto, setinstrumentosAbierto] = useState(false);  
   const [concursosAbierto, setConcursosAbierto] = useState(false);
+  const [acercaDeIncentivosAbierto, setAcercaDeIncentivosAbierto] = useState(false);  
 
   const handleMenuClick = (seccion) => {
     setSeccion(seccion);
@@ -83,6 +84,19 @@ const Sidebar = ({ setSeccion, menuAbierto, setMenuAbierto }) => {
             {concursosAbierto && (
               <ul className="mt-3 ml-5 space-y-3 text-lg font-bold text-[#500778]">
                 <li><button className="w-full text-left text-sm hover:text-[#FF6A13]" onClick={() => handleMenuClick("Com2022_2023")}>2022-2023</button></li>
+              </ul>
+            )}
+          </li>
+
+          <li>
+            <button onClick={() => setAcercaDeIncentivosAbierto(!acercaDeIncentivosAbierto)} className="w-full text-left flex justify-between items-center hover:text-[#FF6A13]">
+              Acerca de incentivos <span>{acercaDeIncentivosAbierto ? "▲" : "▼"}</span>
+            </button>
+            {acercaDeIncentivosAbierto && (
+              <ul className="mt-3 ml-5 space-y-3 text-lg font-bold text-[#500778]">
+                <li><button className="w-full text-left text-sm hover:text-[#FF6A13]" onClick={() => handleMenuClick("Programa_de_Incentivos_para_el_personal")}>Programa de Incentivos para el personal del Servicio Profesional Electoral Nacional del
+Instituto Estatal Electoral</button></li>
+                <li><button className="w-full text-left text-sm hover:text-[#FF6A13]" onClick={() => handleMenuClick("Histórico_de_personal_acreedor_a_incentivos")}>Histórico de personal acreedor a incentivos</button></li>
               </ul>
             )}
           </li>

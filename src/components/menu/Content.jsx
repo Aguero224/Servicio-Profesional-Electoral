@@ -9,6 +9,8 @@ import Catálogo_de_cargos_y_puestos from "../Instrumentos normativos/Catálogo_
 import Estatuto_del_Servicio_Profesional_Electoral from "../Instrumentos normativos/Estatuto_del_Servicio_Profesional_Electoral";
 import Lineamientos from "../Instrumentos normativos/Lineamientos"; 
 import Com2022_2023 from "../Concursos Públicos/Com2022_2023";
+import Programa_de_Incentivos_para_el_personal from "../Acerca de incentivos/Programa_de_Incentivos_para_el_personal";
+import Histórico_de_personal_acreedor_a_incentivos from "../Acerca de incentivos/Histórico_de_personal_acreedor_a_incentivos";  
 
 /* Este componente muestra dinámicamente los contenidos dependiendo de la sección seleccionada en el menú. */
 
@@ -32,8 +34,12 @@ const Content = ({ seccion }) => {
       return <Lineamientos />;
     case "Catálogo_de_cargos_y_puestos":       
       return <Catálogo_de_cargos_y_puestos />;  
-      case "Com2022_2023":       
-      return <Com2022_2023 />;           
+    case "Com2022_2023":       
+      return <Com2022_2023 />;
+    case "Programa_de_Incentivos_para_el_personal":       
+      return <Programa_de_Incentivos_para_el_personal />;
+    case "Histórico_de_personal_acreedor_a_incentivos":       
+      return <Histórico_de_personal_acreedor_a_incentivos />;             
 
     default:
       return (
