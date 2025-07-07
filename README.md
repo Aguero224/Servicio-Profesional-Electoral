@@ -1,6 +1,6 @@
-# Proyecto Estático React
+# Servicio Profesional Electoral
 
-Este es un proyecto base creado con Vite, React y TailwindCSS.
+Este es un proyecto base creado con Vite, React y TailwindCSS para el Sistema del Servicio Profesional Electoral.
 
 ## Tecnologías utilizadas
 
