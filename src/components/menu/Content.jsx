@@ -5,6 +5,9 @@ import Atribuciones from "../Comisión de Seguimiento al Servicio Profesional/At
 import Histórico_de_sesiones from "../Comisión de Seguimiento al Servicio Profesional/Histórico_de_sesiones";
 import Integración from "../Comisión de Seguimiento al Servicio Profesional/Integración";
 import Sesiones_2025 from "../Comisión de Seguimiento al Servicio Profesional/Sesiones_2025"; 
+import Catálogo_de_cargos_y_puestos from "../Instrumentos normativos/Catálogo_de_cargos_y_puestos";
+import Estatuto_del_Servicio_Profesional_Electoral from "../Instrumentos normativos/Estatuto_del_Servicio_Profesional_Electoral";
+import Lineamientos from "../Instrumentos normativos/Lineamientos"; 
 
 /* Este componente muestra dinámicamente los contenidos dependiendo de la sección seleccionada en el menú. */
 
@@ -22,6 +25,12 @@ const Content = ({ seccion }) => {
       return <Integración />;
       case "Sesiones_2025":
       return <Sesiones_2025 />;
+      case "Estatuto_del_Servicio_Profesional_Electoral":
+      return <Estatuto_del_Servicio_Profesional_Electoral />;
+    case "Lineamientos":
+      return <Lineamientos />;
+    case "Catálogo_de_cargos_y_puestos":       
+      return <Catálogo_de_cargos_y_puestos />;           
 
     default:
       return (
