@@ -4,6 +4,7 @@ import logo from "../../assets/Proceso-Electoral-2025.png";
 
 const Sidebar = ({ setSeccion, menuAbierto, setMenuAbierto }) => {
   const [SPENIEEBCAbierto, setSPENIEEBCAbierto] = useState(false);
+  const [comisionAbierto, setComisionAbierto] = useState(false);
   const [etapasAbierto, setEtapasAbierto] = useState(false);
 
   const handleMenuClick = (seccion) => {
@@ -46,21 +47,23 @@ const Sidebar = ({ setSeccion, menuAbierto, setMenuAbierto }) => {
             )}
           </li>
 
-          <li>
-            <button onClick={() => setEtapasAbierto(!etapasAbierto)} className="w-full text-left flex justify-between items-center hover:text-[#FF6A13]">
-              Etapas <span>{etapasAbierto ? "▲" : "▼"}</span>
+
+            <li>
+            <button onClick={() => setComisionAbierto(!comisionAbierto)} className="w-full text-left flex justify-between items-center hover:text-[#FF6A13]">
+              Comisión de Seguimiento al Servicio Profesional Electoral Nacional y de la Rama
+Administrativa. <span>{comisionAbierto ? "▲" : "▼"}</span>
             </button>
-            {etapasAbierto && (
+            {comisionAbierto && (
               <ul className="mt-3 ml-5 space-y-3 text-lg font-bold text-[#500778]">
-                <li><button className="w-full text-left text-sm hover:text-[#FF6A13]" onClick={() => handleMenuClick("preparacion")}>Preparación de la Elección</button></li>
-                <li><button className="w-full text-left text-sm hover:text-[#FF6A13]" onClick={() => handleMenuClick("convocatoria")}>Convocatoria y postulación de candidaturas</button></li>
-                <li><button className="w-full text-left text-sm hover:text-[#FF6A13]" onClick={() => handleMenuClick("jornada")}>Jornada Electoral</button></li>
-                <li><button className="w-full text-left text-sm hover:text-[#FF6A13]" onClick={() => handleMenuClick("computo")}>Cómputos</button></li>
-                <li><button className="w-full text-left text-sm hover:text-[#FF6A13]" onClick={() => handleMenuClick("asignacion")}>Asignación de Cargos</button></li>
-                <li><button className="w-full text-left text-sm hover:text-[#FF6A13]" onClick={() => handleMenuClick("constancias")}>Entrega de Constancias de Mayoría y Declaración de validez de la elección</button></li>
+                <li><button className="w-full text-left text-sm hover:text-[#FF6A13]" onClick={() => handleMenuClick("Integración")}>Integración</button></li>
+                <li><button className="w-full text-left text-sm hover:text-[#FF6A13]" onClick={() => handleMenuClick("Atribuciones")}>Atribuciones</button></li>
+                <li><button className="w-full text-left text-sm hover:text-[#FF6A13]" onClick={() => handleMenuClick("Sesiones_2025")}>Sesiones 2025</button></li>
+                <li><button className="w-full text-left text-sm hover:text-[#FF6A13]" onClick={() => handleMenuClick("Histórico_de_sesiones")}>Histórico de sesiones</button></li>
               </ul>
             )}
           </li>
+
+
         </ul>
 
         <div className="text-base text-gray-700 mt-8 leading-6">

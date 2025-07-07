@@ -1,12 +1,10 @@
 import React from "react";
-import PreparacionEleccion from "../etapas/PreparacionEleccion";
-import Convocatoria from "../etapas/Convocatoria";
-import JornadaElectoral from "../etapas/JornadaElectoral";
-import Computos from "../etapas/Computos";
-import Asignación_de_Cargos from "../etapas/Asignación_de_Cargos";
-import Entrega_de_constancias from "../etapas/Entrega_de_constancias";
 import Funciones from "../SPEN-IEEBC/Funciones";
 import Plaza_sy_adscripciones from "../SPEN-IEEBC/Plaza_sy_adscripciones";
+import Atribuciones from "../Comisión de Seguimiento al Servicio Profesional/Atribuciones"; 
+import Histórico_de_sesiones from "../Comisión de Seguimiento al Servicio Profesional/Histórico_de_sesiones";
+import Integración from "../Comisión de Seguimiento al Servicio Profesional/Integración";
+import Sesiones_2025 from "../Comisión de Seguimiento al Servicio Profesional/Sesiones_2025"; 
 
 /* Este componente muestra dinámicamente los contenidos dependiendo de la sección seleccionada en el menú. */
 
@@ -16,18 +14,15 @@ const Content = ({ seccion }) => {
       return <Funciones />;
     case "Plaza_sy_adscripciones":
       return <Plaza_sy_adscripciones />;
-    case "preparacion":
-      return <PreparacionEleccion />;
-    case "convocatoria":
-      return <Convocatoria />;
-    case "jornada":
-      return <JornadaElectoral />;
-    case "computo":
-      return <Computos />;
-    case "asignacion":
-      return <Asignación_de_Cargos />;
-    case "constancias":
-      return <Entrega_de_constancias />;
+    case "Atribuciones":
+      return <Atribuciones />;
+      case "Histórico_de_sesiones":
+      return <Histórico_de_sesiones />;
+      case "Integración":
+      return <Integración />;
+      case "Sesiones_2025":
+      return <Sesiones_2025 />;
+
     default:
       return (
         <div className="p-4">
